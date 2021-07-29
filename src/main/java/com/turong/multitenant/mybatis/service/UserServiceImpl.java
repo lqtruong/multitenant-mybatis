@@ -38,7 +38,11 @@ public class UserServiceImpl implements UserService {
         if (count == 0) {
             return null;
         }
-        return userMapper.findUserByEmail(userToCreate.getEmail()).orElseThrow(IllegalArgumentException::new);
+        Optional<User> user = userMapper.findUserByEmail(userToCreate.getEmail());
+        if (!user.isPresent()) {
+            return null;
+        }
+        return user.get();
     }
 
     @Override
