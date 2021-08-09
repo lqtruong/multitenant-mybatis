@@ -49,7 +49,7 @@ insert into `users`
 (
     id, email, username, tenant, createdAt, modifiedAt
 ) values
-(2, 'charles@mail.com', 'charles', 'tr', sysdate(), sysdate())
+(2, 'peter@mail.com', 'peter', 'tr', sysdate(), sysdate())
 ;
 
 ####################################################################
