@@ -1,4 +1,4 @@
-use `ufo`; #super admin to manage site admin
+use `master`; #super admin to manage site admin
 create table if not exists `users`(
     `id`            integer primary key auto_increment,
     `username`      varchar(100) not null,
@@ -12,7 +12,7 @@ insert into `users`
 (
     id, email, username, tenant, createdAt, modifiedAt
 ) values
-(1, 'truong@mail.com', 'truong', 'ufo', sysdate(), sysdate())
+(1, 'truong@mail.com', 'truong', 'vn', sysdate(), sysdate())
 ;
 
 ####################################################################

@@ -4,7 +4,7 @@ import lombok.Getter;
 
 public enum SupportedTenant {
 
-    UFO("ufo"),
+    MASTER("master"),
     TR("tr"),
     IND("ind"),
     VN("vn");

@@ -1,4 +1,4 @@
-use `ufo`;
+use `master`;
 
 create table if not exists `users`(
     `id`            integer primary key auto_increment,
